@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+$font-stack: 'Roboto', Arial, Helvetica, sans-serif;
+$light-color:#f4f4f4;
+$dark-color:#222;
+$primary-color:#d0d0d0;
+$secondary-color: #333;
+$accent-color: #8F0BFF;
+
+// Basics
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+.gutter-1{
+  margin-bottom: 0 !important;
+  padding: 4px;
+}
+
+.vh-gutter{
+  margin-top: 4vh;
+}
+
+.vh-25 {
+  height: 25vh;
+  min-height: 25vh;
+}
+
+.vh-40 {
+  height: 40vh;
+  min-height: 40vh;
+}
+
+.vh-50 {
+  height: 50vh;
+  min-height: 50vh;
+}
+.vh-75 {
+  height: 75vh;
+  min-height: 75vh;
+}
+
+.equal {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+a{
+  color: #666666;
+}
+
+a:hover{
+  color: $accent-color;
+  text-decoration: none;
+}
+
+figure{
+  margin: 0;
+}
+
+// Menu
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+// Home-page
+
+.small-card{
+    background-color: #E5E5E5;
+    background-size: cover;
+}
+
+.medium-card{
+    background-color: #E5E5E5;
+    background-size: cover;
+}
+
+.big-card{
+    background-color: #A01A1A
+}
+
+.card-image {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+// Home-page > Shop
+#shop{
+  .card-body h4{
+    font-size: 14px;
+    font-style: italic;
+  }
+  .card-body h5{
+    font-size: 18px;
+  }
+  .card-body h6{
+    font-size: 20px;
+  }
+  
+}
+
+
+
