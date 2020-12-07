@@ -6,6 +6,7 @@
 
 $font-stack: 'Roboto', Arial, Helvetica, sans-serif;
 $light-color:#f4f4f4;
+$light-gray: #aaa;
 $dark-color:#222;
 $primary-color:#d0d0d0;
 $secondary-color: #333;
@@ -42,6 +43,10 @@ body{
   margin-top: 4vh;
 }
 
+.vh-10 {
+  height: 10vh;
+  min-height: 10vh;
+}
 .vh-25 {
   height: 25vh;
   min-height: 25vh;
@@ -80,7 +85,15 @@ figure{
   margin: 0;
 }
 
-// Menu
+// Colors
+.light-gray{
+  background-color: $light-gray;
+}
+.primary-color{
+  background-color: $primary-color;
+}
+
+// NAVIGATION
 
 .dropdown:hover>.dropdown-menu {
     display: block;
@@ -91,7 +104,7 @@ figure{
       pointer-events: none;
   }
 
-// Home-page
+// HOME PAGE
 
 .small-card{
     background-color: #E5E5E5;
@@ -122,7 +135,7 @@ figure{
   background-position: left center;
 }
 
-// Home-page > Shop
+// HOME PAGE > Shop Section
 #shop{
   .card-body h4{
     font-size: 14px;
@@ -136,6 +149,51 @@ figure{
   }
   
 }
+
+// PRODUCT PAGE
+.product{
+  h5{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #666666;
+  }
+  h3{
+    font-size: 1rem;
+  }
+
+  .prices{
+    h3{
+      font-size: 1.2rem;
+      span{
+        font-weight:400;
+        text-decoration: line-through;
+        color:$light-gray;
+      }
+    }
+    .discount{
+      color:red;
+    }
+  }
+
+}
+
+// CART PAGE
+.cart{
+  h2{
+    font-size: 6vh;
+  }
+  .bg-cart{
+    background-color: #eee;
+  }
+
+  .cart-item img{
+    max-width: 5rem;
+  }
+}
+
+
+
 
 
 

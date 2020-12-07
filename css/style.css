@@ -28,6 +28,11 @@ body {
   margin-top: 4vh;
 }
 
+.vh-10 {
+  height: 10vh;
+  min-height: 10vh;
+}
+
 .vh-25 {
   height: 25vh;
   min-height: 25vh;
@@ -65,6 +70,14 @@ a:hover {
 
 figure {
   margin: 0;
+}
+
+.light-gray {
+  background-color: #aaa;
+}
+
+.primary-color {
+  background-color: #d0d0d0;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -114,6 +127,37 @@ figure {
 }
 #shop .card-body h6 {
   font-size: 20px;
+}
+
+.product h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #666666;
+}
+.product h3 {
+  font-size: 1rem;
+}
+.product .prices h3 {
+  font-size: 1.2rem;
+}
+.product .prices h3 span {
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #aaa;
+}
+.product .prices .discount {
+  color: red;
+}
+
+.cart h2 {
+  font-size: 6vh;
+}
+.cart .bg-cart {
+  background-color: #eee;
+}
+.cart .cart-item img {
+  max-width: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
