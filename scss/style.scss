@@ -22,7 +22,7 @@ $logo-color: #FC7C0B;
 }
 
 body{
-    background-color: $light-color;
+    background-color: #fff;
     font-family: $font-stack;
     line-height: 1.6;
 }
@@ -85,6 +85,14 @@ figure{
   margin: 0;
 }
 
+.discount{
+  color:red;
+}
+
+.bg-cart{
+  background-color: #eee;
+}
+
 // Colors
 .light-gray{
   background-color: $light-gray;
@@ -105,6 +113,11 @@ figure{
   }
 
 // HOME PAGE
+
+.jumbotron {
+  background-image: url('../images/background-intro.jpg');
+  background-size: cover;
+}
 
 .small-card{
     background-color: #E5E5E5;
@@ -171,9 +184,6 @@ figure{
         color:$light-gray;
       }
     }
-    .discount{
-      color:red;
-    }
   }
 
 }
@@ -190,6 +200,22 @@ figure{
   .cart-item img{
     max-width: 5rem;
   }
+  .discount{
+    span{
+      color: $light-gray;
+      font-weight: 300;
+      text-decoration: line-through;
+
+    }
+  }
+}
+
+// CHECKOUT
+.expiration {
+  border: 1px solid #bbbbbb;
+}
+.expiration input {
+  border: 0;
 }
 
 

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #fff;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
@@ -72,6 +72,14 @@ figure {
   margin: 0;
 }
 
+.discount {
+  color: red;
+}
+
+.bg-cart {
+  background-color: #eee;
+}
+
 .light-gray {
   background-color: #aaa;
 }
@@ -87,6 +95,11 @@ figure {
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
+}
+
+.jumbotron {
+  background-image: url("../images/background-intro.jpg");
+  background-size: cover;
 }
 
 .small-card {
@@ -146,9 +159,6 @@ figure {
   text-decoration: line-through;
   color: #aaa;
 }
-.product .prices .discount {
-  color: red;
-}
 
 .cart h2 {
   font-size: 6vh;
@@ -158,6 +168,19 @@ figure {
 }
 .cart .cart-item img {
   max-width: 5rem;
+}
+.cart .discount span {
+  color: #aaa;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.expiration {
+  border: 1px solid #bbbbbb;
+}
+
+.expiration input {
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
